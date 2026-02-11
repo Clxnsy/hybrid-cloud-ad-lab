@@ -1,0 +1,52 @@
+# -----------------------------------------------------------------------------
+# Generated reports. These can contain temporary passwords, usernames, last-logon
+# timestamps and other directory data. They must never reach source control.
+# -----------------------------------------------------------------------------
+reports/
+*.report.csv
+Onboarding-Report-*.csv
+Offboarding-Report-*.csv
+ADHealth-*.csv
+
+# -----------------------------------------------------------------------------
+# Real employee data. Only sample-data/employees.csv (fictional) is tracked.
+# -----------------------------------------------------------------------------
+*-real.csv
+newhires-*.csv
+leavers-*.csv
+
+# -----------------------------------------------------------------------------
+# Anything that could contain credentials or tenant-specific identifiers.
+# -----------------------------------------------------------------------------
+*.pfx
+*.cer
+*.key
+*.pem
+secrets.json
+*.credential
+*.clixml
+appsettings.local.json
+
+# -----------------------------------------------------------------------------
+# Entra Connect / AD exports
+# -----------------------------------------------------------------------------
+*.svrexport
+*ADSyncConfig*.json
+GPOBackup/
+
+# -----------------------------------------------------------------------------
+# Editor / OS noise
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# -----------------------------------------------------------------------------
+# PowerShell transcripts and logs
+# -----------------------------------------------------------------------------
+*.log
+transcripts/
+PowerShell_transcript.*
